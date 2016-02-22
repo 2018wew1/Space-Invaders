@@ -16,10 +16,6 @@ public class PowerUpEntity extends Entity {
 		}
 		
 		if (other instanceof ShipEntity) {
-			// remove the affected entities
-
-			game.removeEntity(this);
-			game.removeEntity(other);
 
 			used = true;
 		}

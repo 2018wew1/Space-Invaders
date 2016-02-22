@@ -27,7 +27,7 @@ public class ShipEntity extends Entity {
 
 		// of the screen, don't move
 
-		if ((dx < 0) && (x < 50)) {
+		if ((dx < 0) && (x < 10)) {
 			return;
 		}
 		
@@ -35,7 +35,7 @@ public class ShipEntity extends Entity {
 		
 		// of the screen, don't move
 		
-		if ((dy < 0) && (y < 50)) {
+		if ((dy < 0) && (y < 10)) {
 			return;
 		}
 		
@@ -43,14 +43,14 @@ public class ShipEntity extends Entity {
 		
 		// of the screen, don't move
 		
-		if ((dy > 0) && (y > 550)) {
+		if ((dy > 0) && (y > 580)) {
 			return;
 		}
 		// if we're moving right and have reached the right hand side
 
 		// of the screen, don't move
 
-		if ((dx > 0) && (x > 750)) {
+		if ((dx > 0) && (x > 780)) {
 			return;
 		}
 		
