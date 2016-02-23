@@ -26,7 +26,7 @@ import javax.swing.JPanel;
  * will also allow the player to control the main ship.
  * 
  * As a mediator it will be informed when entities within our game
- * detect events (e.g. alien killed, played died) and will take
+ * detect events (ex. alien killed, played died) and will take
  * appropriate game actions.
  * 
  * 
@@ -102,7 +102,7 @@ public class Game extends Canvas {
 		JPanel panel = (JPanel) container.getContentPane();
 		panel.setPreferredSize(new Dimension(800,600));
 		panel.setLayout(null);
-		
+		//this,"sprites/ship.png",370,550
 		// setup our canvas size and put it into the content of the frame
 
 		setBounds(0,0,800,600);
