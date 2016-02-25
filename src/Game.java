@@ -68,8 +68,8 @@ public class Game extends Canvas {
 	/** Generate a random Y coordinate */
 	private int randomY = randomGenerator.nextInt(600);
 	
-	
-	
+	/** Background sprite **/
+	private Entity background;
 	
 	/** The message to display which waiting for a key press */
 	private String message = "";
@@ -178,12 +178,16 @@ public class Game extends Canvas {
 	 * entity will be added to the overall list of entities in the game.
 	 */
 	private void initEntities() {
+		
+		background = new Background(this,"sprites/background.png", 0, 0);
+		entities.add(background);
+		
 		// create the player ship and place it roughly in the center of the screen
 
 		ship = new ShipEntity(this,"sprites/ship.png",370,550);
 		entities.add(ship);
 		
-		powerup1 = new PowerUpEntity(this,"sprites/powerup.png", 100, 100);
+		powerup1 = new PowerUpEntity(this,"sprites/powerup.png", 0, 0);
 		
 		// create a block of aliens (5 rows, by 12 aliens, spaced evenly)
 
@@ -310,6 +314,7 @@ public class Game extends Canvas {
 		entities.add(shot);
 	}
 	
+	//Adds a powerup to a random location every 10 seconds
 	public void spawnPowerUp() {
 		
 		if (System.currentTimeMillis() - lastPowerUpSpawn < powerUpInterval) {

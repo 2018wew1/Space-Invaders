@@ -1,4 +1,5 @@
 /AlienEntity.class
+/BackgroundImageJFrame.class
 /Entity.class
 /Game$1.class
 /Game$KeyInputHandler.class
@@ -9,4 +10,6 @@
 /Sprite.class
 /SpriteStore.class
 /sprites/
-/BackgroundImageJFrame.class
+/Background.class
+/Background$1.class
+/Background$ImageCanvas.class
